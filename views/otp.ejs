@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OTP Verification</title>
+</head>
+<body>
+    <h1>OTP Verification</h1>
+    <p><%= message %></p>
+    
+    <!-- OTP Verification Form -->
+    <form action="/otp/verify/<%= userId %>" method="post">
+        <input type="text" name="token" placeholder="Enter OTP" required><br>
+        <button type="submit">Verify OTP</button>
+    </form>
+</body>
+</html>
